@@ -1,4 +1,7 @@
 package pe.edu.upc.parkingzone.repositories;
 
-public interface IChatbotRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import pe.edu.upc.parkingzone.entities.Chatbot;
+
+public interface IChatbotRepository extends JpaRepository<Chatbot, Integer> {
 }
