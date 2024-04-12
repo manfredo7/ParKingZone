@@ -26,9 +26,8 @@ public class MembresiaServiceImplement implements IMembresiaService{
     }
 
     @Override
-    public List<Membresia> findByDescripcionMembresia(String name){
-        return mR.findByDescripcionMembresia(name);
+    public List<Membresia> findByFechaInicioMembresia(String name) {
+        return mR.findByFechaInicioMembresia(name);
     }
-
 
 }

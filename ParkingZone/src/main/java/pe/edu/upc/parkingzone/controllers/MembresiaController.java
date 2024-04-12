@@ -18,13 +18,14 @@ public class MembresiaController {
     @Autowired
     private IMembresiaService mS;
 
+    //Reg
     @PostMapping
     public void insertar(@RequestBody MembresiaDTO membresiaDTO){
         ModelMapper m=new ModelMapper();
         Membresia mm =m.map(membresiaDTO,Membresia.class);
         mS.insert(mm);
     }
-
+    //Vis
     @GetMapping
     public List<MembresiaDTO> listar(){
         return mS.list().stream().map(y->{
@@ -32,9 +33,24 @@ public class MembresiaController {
             return m.map(y,MembresiaDTO.class);
         }).collect(Collectors.toList());
     }
-
+    //Eliminar
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id){
         mS.delete(id);
+    }
+    //buscar por id
+    @GetMapping("/{id}")
+    public MembresiaDTO listarId(@PathVariable("id") Integer id){
+        ModelMapper m=new ModelMapper();
+        MembresiaDTO dto=m.map(mS.listId(id),MembresiaDTO.class);
+        return dto;
+    }
+    //buscar por fechaInicio
+    @GetMapping("/buscar")
+    public List<MembresiaDTO>buscarFechaInicio(@RequestParam String fechaInicio){
+        return mS.findByFechaInicioMembresia(fechaInicio).stream().map(y->{
+            ModelMapper m=new ModelMapper();
+            return m.map(y, MembresiaDTO.class);
+        }).collect(Collectors.toList());
     }
 }

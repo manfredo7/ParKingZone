@@ -32,4 +32,10 @@ public class TestacionamientoServiceImplement implements ITestacionamientoServic
     public List<Testacionamiento> findByDescripcionTestacionamiento(String name) {
         return teR.findByDescripcionTestacionamiento(name);
     }
+
+    @Override
+    public List<Testacionamiento> findByMedidaTestacionamiento(int name) {
+        return teR.findByMedidaTestacionamiento(name);
+    }
+
 }

@@ -1,11 +1,15 @@
 package pe.edu.upc.parkingzone.dtos;
 
+import java.time.LocalDate;
+
 public class MembresiaDTO {
     private int idMembresia;
-    private int fechaInicioMembresia;
-    private int fechaFinMembresia;
+    private float precioMembresia;
+    private LocalDate fechaInicioMembresia;
+    private LocalDate fechaFinMembresia;
     private String descripcionMembresia;
     private float descuentoMembresia;
+
 
     public int getIdMembresia() {
         return idMembresia;
@@ -15,19 +19,27 @@ public class MembresiaDTO {
         this.idMembresia = idMembresia;
     }
 
-    public int getFechaInicioMembresia() {
+    public float getPrecioMembresia() {
+        return precioMembresia;
+    }
+
+    public void setPrecioMembresia(float precioMembresia) {
+        this.precioMembresia = precioMembresia;
+    }
+
+    public LocalDate getFechaInicioMembresia() {
         return fechaInicioMembresia;
     }
 
-    public void setFechaInicioMembresia(int fechaInicioMembresia) {
+    public void setFechaInicioMembresia(LocalDate fechaInicioMembresia) {
         this.fechaInicioMembresia = fechaInicioMembresia;
     }
 
-    public int getFechaFinMembresia() {
+    public LocalDate getFechaFinMembresia() {
         return fechaFinMembresia;
     }
 
-    public void setFechaFinMembresia(int fechaFinMembresia) {
+    public void setFechaFinMembresia(LocalDate fechaFinMembresia) {
         this.fechaFinMembresia = fechaFinMembresia;
     }
 
