@@ -2,7 +2,6 @@ package pe.edu.upc.parkingzone.serviceinterfaces;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import pe.edu.upc.parkingzone.entities.Membresia;
 import pe.edu.upc.parkingzone.entities.Rol;
 
 import java.util.List;

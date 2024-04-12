@@ -5,11 +5,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.parkingzone.dtos.ChatbotDTO;
-import pe.edu.upc.parkingzone.dtos.MembresiaDTO;
 import pe.edu.upc.parkingzone.entities.Chatbot;
-import pe.edu.upc.parkingzone.entities.Membresia;
 import pe.edu.upc.parkingzone.serviceinterfaces.IChatbotService;
-import pe.edu.upc.parkingzone.serviceinterfaces.IMembresiaService;
 
 import java.util.List;
 import java.util.stream.Collectors;

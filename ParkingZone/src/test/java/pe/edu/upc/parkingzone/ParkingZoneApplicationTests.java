@@ -1,10 +1,10 @@
-package pe.edu.upc.parkingzone;
+package pe.edu.upc.ParKingZone;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ParkingZoneApplicationTests {
+class ParKingZoneApplicationTests {
 
 	@Test
 	void contextLoads() {

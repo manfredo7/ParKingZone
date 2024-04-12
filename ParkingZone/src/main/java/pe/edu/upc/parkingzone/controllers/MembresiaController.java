@@ -3,11 +3,9 @@ package pe.edu.upc.parkingzone.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import pe.edu.upc.parkingzone.dtos.MembresiaDTO;
 import pe.edu.upc.parkingzone.entities.Membresia;
-
-import pe.edu.upc.parkingzone.serviceinterfaces.IMembresiaService;
+import pe.edu.upc.parkingzone.servicesinterfaces.IMembresiaService;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,8 +13,9 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/membresia")
 public class MembresiaController {
-    @Autowired
-    private IMembresiaService mS;
+
+@Autowired
+private IMembresiaService mS;
 
     @PostMapping
     public void insertar(@RequestBody MembresiaDTO membresiaDTO){
@@ -33,8 +32,5 @@ public class MembresiaController {
         }).collect(Collectors.toList());
     }
 
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable("id") Integer id){
-        mS.delete(id);
-    }
+
 }

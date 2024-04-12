@@ -1,4 +1,4 @@
-package pe.edu.upc.ParKingZone.entities;
+package pe.edu.upc.parkingzone.entities;
 
 import jakarta.persistence.*;
 

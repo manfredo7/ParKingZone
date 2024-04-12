@@ -1,7 +1,8 @@
 package pe.edu.upc.parkingzone.entities;
-//OSCAR
+
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "Membresia")
@@ -9,31 +10,27 @@ public class Membresia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idMembresia;
-    @Column(name="fechaInicioMembresia",nullable = false)
-    private int fechaInicioMembresia;
-    @Column(name ="fechaFinMembresia",nullable = false)
-    private int fechaFinMembresia;
-    @Column(name ="descripcionMembresia",length = 50,nullable = false)
-    private String descripcionMembresia;
-    @Column(name ="descuentoMembresia",nullable = false)
-    private float descuentoMembresia;
 
-    //CONSTRUCTOR
+    @Column(name = "finicioMembresia", nullable = false)
+    private LocalDate finicioMembresia;
+
+    @Column(name = "ffinMembresia", nullable = false)
+    private LocalDate ffinMembresia;
+
+    @Column(name = "descripcionMembresia",length = 200,nullable = false)
+    private String descripcionMembresia;
+
+
     public Membresia() {
     }
 
-    public Membresia(int idMembresia, int fechaInicioMembresia, int fechaFinMembresia, String descripcionMembresia, float descuentoMembresia) {
+    public Membresia(int idMembresia, LocalDate finicioMembresia, LocalDate ffinMembresia, String descripcionMembresia) {
         this.idMembresia = idMembresia;
-        this.fechaInicioMembresia = fechaInicioMembresia;
-        this.fechaFinMembresia = fechaFinMembresia;
+        this.finicioMembresia = finicioMembresia;
+        this.ffinMembresia = ffinMembresia;
         this.descripcionMembresia = descripcionMembresia;
-        this.descuentoMembresia = descuentoMembresia;
     }
 
-
-
-
-    //METODOS DE ACCESO
     public int getIdMembresia() {
         return idMembresia;
     }
@@ -42,20 +39,20 @@ public class Membresia {
         this.idMembresia = idMembresia;
     }
 
-    public int getFechaInicioMembresia() {
-        return fechaInicioMembresia;
+    public LocalDate getFinicioMembresia() {
+        return finicioMembresia;
     }
 
-    public void setFechaInicioMembresia(int fechaInicioMembresia) {
-        this.fechaInicioMembresia = fechaInicioMembresia;
+    public void setFinicioMembresia(LocalDate finicioMembresia) {
+        this.finicioMembresia = finicioMembresia;
     }
 
-    public int getFechaFinMembresia() {
-        return fechaFinMembresia;
+    public LocalDate getFfinMembresia() {
+        return ffinMembresia;
     }
 
-    public void setFechaFinMembresia(int fechaFinMembresia) {
-        this.fechaFinMembresia = fechaFinMembresia;
+    public void setFfinMembresia(LocalDate ffinMembresia) {
+        this.ffinMembresia = ffinMembresia;
     }
 
     public String getDescripcionMembresia() {
@@ -65,15 +62,4 @@ public class Membresia {
     public void setDescripcionMembresia(String descripcionMembresia) {
         this.descripcionMembresia = descripcionMembresia;
     }
-
-    public float getDescuentoMembresia() {
-        return descuentoMembresia;
-    }
-
-    public void setDescuentoMembresia(float descuentoMembresia) {
-        this.descuentoMembresia = descuentoMembresia;
-    }
-
 }
-
-

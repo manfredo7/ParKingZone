@@ -1,6 +1,6 @@
-package pe.edu.upc.ParKingZone.servicesinterfaces;
+package pe.edu.upc.parkingzone.servicesinterfaces;
 
-import pe.edu.upc.ParKingZone.entities.Usuario;
+import pe.edu.upc.parkingzone.entities.Usuario;
 
 import java.util.List;
 
