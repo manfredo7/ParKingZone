@@ -21,17 +21,21 @@ public class Reserva {
     @ManyToOne
     @JoinColumn(name="Estacionamientoid")
     private Estacionamiento estacionamiento;
+    @ManyToOne
+    @JoinColumn(name="Usuarioid")
+    private Usuario usuario;
 
     public Reserva() {
     }
 
-    public Reserva(int idReserva, LocalDate fechaReserva, LocalDate horaInicioReserva, LocalDate horaFinalReserva, String estadoReserva, Estacionamiento estacionamiento) {
+    public Reserva(int idReserva, LocalDate fechaReserva, LocalDate horaInicioReserva, LocalDate horaFinalReserva, String estadoReserva, Estacionamiento estacionamiento, Usuario usuario) {
         this.idReserva = idReserva;
         this.fechaReserva = fechaReserva;
         this.horaInicioReserva = horaInicioReserva;
         this.horaFinalReserva = horaFinalReserva;
         this.estadoReserva = estadoReserva;
         this.estacionamiento = estacionamiento;
+        this.usuario = usuario;
     }
 
     public int getIdReserva() {
@@ -80,5 +84,13 @@ public class Reserva {
 
     public void setEstacionamiento(Estacionamiento estacionamiento) {
         this.estacionamiento = estacionamiento;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
