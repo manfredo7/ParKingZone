@@ -2,6 +2,7 @@ package pe.edu.upc.parkingzone.dtos;
 
 import jakarta.persistence.Column;
 import pe.edu.upc.parkingzone.entities.Estacionamiento;
+import pe.edu.upc.parkingzone.entities.Usuario;
 
 import java.time.LocalDate;
 
@@ -11,6 +12,7 @@ public class ReservaDTO {
     private LocalDate horaFinalReserva;
     private String estadoReserva;
     private Estacionamiento estacionamiento;
+    private Usuario usuario;
 
     public LocalDate getFechaReserva() {
         return fechaReserva;
@@ -50,5 +52,13 @@ public class ReservaDTO {
 
     public void setEstacionamiento(Estacionamiento estacionamiento) {
         this.estacionamiento = estacionamiento;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
