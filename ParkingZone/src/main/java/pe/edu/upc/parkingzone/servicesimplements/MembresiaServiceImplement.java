@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import pe.edu.upc.parkingzone.entities.Membresia;
 import pe.edu.upc.parkingzone.repositories.IMembresiaRepository;
-import pe.edu.upc.parkingzone.servicesinterfaces.IMembresiaService;
+import pe.edu.upc.parkingzone.serviceinterfaces.IMembresiaService;
 
 import java.util.List;
 

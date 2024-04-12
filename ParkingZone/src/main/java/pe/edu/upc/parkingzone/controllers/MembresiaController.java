@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.parkingzone.dtos.MembresiaDTO;
 import pe.edu.upc.parkingzone.entities.Membresia;
-import pe.edu.upc.parkingzone.servicesinterfaces.IMembresiaService;
+import pe.edu.upc.parkingzone.serviceinterfaces.IMembresiaService;
 
 import java.util.List;
 import java.util.stream.Collectors;
