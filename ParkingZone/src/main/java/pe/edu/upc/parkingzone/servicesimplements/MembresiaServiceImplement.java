@@ -25,10 +25,6 @@ public class MembresiaServiceImplement implements IMembresiaService{
         return mR.findById(id).orElse(new Membresia());
     }
 
-    @Override
-    public List<Membresia> findByDescripcionMembresia(String name){
-        return mR.findByDescripcionMembresia(name);
-    }
 
 
 }

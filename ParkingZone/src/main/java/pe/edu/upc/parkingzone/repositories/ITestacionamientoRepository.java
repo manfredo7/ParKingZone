@@ -10,4 +10,5 @@ import java.util.List;
 @Repository
 public interface ITestacionamientoRepository extends JpaRepository<Testacionamiento, Integer> {
     public List<Testacionamiento> findByDescripcionTestacionamiento(String name);
+
 }
