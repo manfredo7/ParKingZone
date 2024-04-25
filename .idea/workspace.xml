@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500a0e2d-abb0-408d-b454-d21475fe8701" name="Changes" comment="Reserva">
+    <list default="true" id="500a0e2d-abb0-408d-b454-d21475fe8701" name="Changes" comment="Comentarios y reservapago">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/controllers/ReservaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/controllers/ReservaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/dtos/ReservaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/dtos/ReservaDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/entities/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/entities/Reserva.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/repositories/IReservaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/repositories/IReservaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "manfredo7"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;manfredo7&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -100,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1714023313141</updated>
       <workItem from="1714023316163" duration="1646000" />
-      <workItem from="1714056899854" duration="5565000" />
+      <workItem from="1714056899854" duration="6181000" />
+      <workItem from="1714063904378" duration="222000" />
     </task>
     <task id="LOCAL-00001" summary="Reserva">
       <option name="closed" value="true" />
@@ -110,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714059950849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Comentarios y reservapago">
+      <option name="closed" value="true" />
+      <created>1714063408347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714063408347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,10 +144,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reserva" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reserva" />
+    <MESSAGE value="Comentarios y reservapago" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentarios y reservapago" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+      "branch": "Luciano",
+      "currentBranchFilter": true
+    },
     {
       "branch": "Luciano",
       "currentBranchFilter": true
