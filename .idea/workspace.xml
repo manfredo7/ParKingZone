@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500a0e2d-abb0-408d-b454-d21475fe8701" name="Changes" comment="">
+    <list default="true" id="500a0e2d-abb0-408d-b454-d21475fe8701" name="Changes" comment="Reserva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/ReservaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/ReservaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/dtos/ReservaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/dtos/ReservaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/entities/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/entities/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IReservaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IReservaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/controllers/ReservaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/controllers/ReservaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/dtos/ReservaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/dtos/ReservaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/entities/Reserva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/entities/Reserva.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/repositories/IReservaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/repositories/IReservaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,8 +100,17 @@
       <option name="presentableId" value="Default" />
       <updated>1714023313141</updated>
       <workItem from="1714023316163" duration="1646000" />
-      <workItem from="1714056899854" duration="2406000" />
+      <workItem from="1714056899854" duration="5565000" />
     </task>
+    <task id="LOCAL-00001" summary="Reserva">
+      <option name="closed" value="true" />
+      <created>1714059950849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714059950849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +138,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reserva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reserva" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
