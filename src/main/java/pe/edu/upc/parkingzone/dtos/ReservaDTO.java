@@ -4,11 +4,13 @@ import pe.edu.upc.parkingzone.entities.Estacionamiento;
 import pe.edu.upc.parkingzone.entities.Users;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class ReservaDTO {
+    private int idReserva;
     private LocalDate fechaReserva;
-    private LocalDate horaInicioReserva;
-    private LocalDate horaFinalReserva;
+    private LocalTime horaInicioReserva;
+    private LocalTime horaFinalReserva;
     private String estadoReserva;
     private Estacionamiento estacionamiento;
     private Users usuario;
@@ -21,19 +23,19 @@ public class ReservaDTO {
         this.fechaReserva = fechaReserva;
     }
 
-    public LocalDate getHoraInicioReserva() {
+    public LocalTime getHoraInicioReserva() {
         return horaInicioReserva;
     }
 
-    public void setHoraInicioReserva(LocalDate horaInicioReserva) {
+    public void setHoraInicioReserva(LocalTime horaInicioReserva) {
         this.horaInicioReserva = horaInicioReserva;
     }
 
-    public LocalDate getHoraFinalReserva() {
+    public LocalTime getHoraFinalReserva() {
         return horaFinalReserva;
     }
 
-    public void setHoraFinalReserva(LocalDate horaFinalReserva) {
+    public void setHoraFinalReserva(LocalTime horaFinalReserva) {
         this.horaFinalReserva = horaFinalReserva;
     }
 
@@ -59,5 +61,13 @@ public class ReservaDTO {
 
     public void setUsuario(Users usuario) {
         this.usuario = usuario;
+    }
+
+    public int getIdReserva() {
+        return idReserva;
+    }
+
+    public void setIdReserva(int idReserva) {
+        this.idReserva = idReserva;
     }
 }
