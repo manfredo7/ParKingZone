@@ -1,8 +1,5 @@
 package pe.edu.upc.parkingzone.servicesimplements;
 
-<<<<<<< Updated upstream
-public class ReservaServiceImplement {
-=======
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.upc.parkingzone.entities.Reserva;
@@ -42,5 +39,4 @@ rR.deleteById(idreserva);
     }
 
 
->>>>>>> Stashed changes
 }

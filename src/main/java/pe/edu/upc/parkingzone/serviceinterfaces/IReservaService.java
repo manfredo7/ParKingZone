@@ -1,8 +1,5 @@
 package pe.edu.upc.parkingzone.serviceinterfaces;
 
-<<<<<<< Updated upstream
-public interface IReservaService {
-=======
 import org.springframework.data.repository.query.Param;
 import pe.edu.upc.parkingzone.entities.Reserva;
 import pe.edu.upc.parkingzone.entities.Users;
@@ -23,5 +20,4 @@ public interface IReservaService {
     List<Object[]> horasReserva();
 
 
->>>>>>> Stashed changes
 }

@@ -1,8 +1,5 @@
 package pe.edu.upc.parkingzone.controllers;
 
-<<<<<<< Updated upstream
-public class ReservaController {
-=======
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,5 +72,4 @@ public class ReservaController {
         }
         return dtoList;
     }
->>>>>>> Stashed changes
 }

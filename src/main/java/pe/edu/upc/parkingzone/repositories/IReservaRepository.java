@@ -1,8 +1,5 @@
 package pe.edu.upc.parkingzone.repositories;
 
-<<<<<<< Updated upstream
-public interface IReservaRepository {
-=======
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -22,5 +19,4 @@ public interface IReservaRepository extends JpaRepository<Reserva, Integer> {
             "ORDER BY horas_reservadas DESC " +
             "LIMIT 1", nativeQuery = true)
    List<Object[]> horasReserva();
->>>>>>> Stashed changes
 }

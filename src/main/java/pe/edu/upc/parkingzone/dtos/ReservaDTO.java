@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class ReservaDTO {
+    private int idReserva;
     private LocalDate fechaReserva;
     private LocalTime horaInicioReserva;
     private LocalTime horaFinalReserva;
@@ -60,5 +61,13 @@ public class ReservaDTO {
 
     public void setUsuario(Users usuario) {
         this.usuario = usuario;
+    }
+
+    public int getIdReserva() {
+        return idReserva;
+    }
+
+    public void setIdReserva(int idReserva) {
+        this.idReserva = idReserva;
     }
 }
