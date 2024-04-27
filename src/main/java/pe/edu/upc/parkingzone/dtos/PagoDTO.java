@@ -1,12 +1,8 @@
 package pe.edu.upc.parkingzone.dtos;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import pe.edu.upc.parkingzone.entities.Tpago;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+//Desarrollo Ricardo
 
 public class PagoDTO {
     private int idPago;

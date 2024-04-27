@@ -1,4 +1,5 @@
 package pe.edu.upc.parkingzone.repositories;
+//Desarrollo Ricardo
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

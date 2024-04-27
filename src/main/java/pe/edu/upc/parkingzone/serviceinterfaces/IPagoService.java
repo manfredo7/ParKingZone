@@ -1,8 +1,7 @@
 package pe.edu.upc.parkingzone.serviceinterfaces;
 //Ricardo
-import org.springframework.data.repository.query.Param;
-import pe.edu.upc.parkingzone.entities.Pago;
 
+import pe.edu.upc.parkingzone.entities.Pago;
 import java.time.LocalDate;
 import java.util.List;
 

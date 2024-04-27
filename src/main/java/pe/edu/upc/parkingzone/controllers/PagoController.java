@@ -1,4 +1,5 @@
 package pe.edu.upc.parkingzone.controllers;
+//Desarrollo Ricardo
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,6 @@ import pe.edu.upc.parkingzone.dtos.PagoDTO;
 import pe.edu.upc.parkingzone.dtos.QuerysDTO.PagoQ1DTO;
 import pe.edu.upc.parkingzone.dtos.QuerysDTO.PagoQ2DTO;
 import pe.edu.upc.parkingzone.entities.Pago;
-import pe.edu.upc.parkingzone.repositories.IPagoRepository;
 import pe.edu.upc.parkingzone.serviceinterfaces.IPagoService;
 
 import java.time.LocalDate;
