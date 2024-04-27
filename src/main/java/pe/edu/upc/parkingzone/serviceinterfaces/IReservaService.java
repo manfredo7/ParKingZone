@@ -4,6 +4,7 @@ import org.springframework.data.repository.query.Param;
 import pe.edu.upc.parkingzone.entities.Reserva;
 import pe.edu.upc.parkingzone.entities.Users;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -17,7 +18,9 @@ public interface IReservaService {
 
     public Reserva listarId(int idreserva);
 
-    List<Object[]> horasReserva();
+    int CountReservaPerDateRange(LocalDate startDate, LocalDate endDate);
+
+    List<String[]> cantrxe();
 
 
 }

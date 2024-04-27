@@ -1,31 +1,17 @@
 package pe.edu.upc.parkingzone.dtos.QuerysDTO;
 
 public class ReservaQ1DTO {
-    private int id;
-    private String nombre;
-    private Double horasReservadas;
+    private int cantreservas;
 
-    public int getId() {
-        return id;
+    public ReservaQ1DTO(int cantreservas) {
+        this.cantreservas = cantreservas;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getCantreservas() {
+        return cantreservas;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Double getHorasReservadas() {
-        return horasReservadas;
-    }
-
-    public void setHorasReservadas(Double horasReservadas) {
-        this.horasReservadas = horasReservadas;
+    public void setCantreservas(int cantreservas) {
+        this.cantreservas = cantreservas;
     }
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.parkingzone.dtos.QuerysDTO.ReservaQ1DTO;
+import pe.edu.upc.parkingzone.dtos.QuerysDTO.ReservaQ2DTO;
 import pe.edu.upc.parkingzone.dtos.QuerysDTO.UserQ1DTO;
 import pe.edu.upc.parkingzone.dtos.ReservaDTO;
 import pe.edu.upc.parkingzone.dtos.TestacionamientoDTO;
@@ -15,6 +16,7 @@ import pe.edu.upc.parkingzone.entities.Testacionamiento;
 import pe.edu.upc.parkingzone.entities.Users;
 import pe.edu.upc.parkingzone.serviceinterfaces.IReservaService;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -59,17 +61,24 @@ public class ReservaController {
         ReservaDTO dto = m.map(rS.listarId(id), ReservaDTO.class);
         return dto;
     }
-    @GetMapping("/horasreservadas")
-    public List<ReservaQ1DTO> getMaxHorasReservadas() {
-        List<Object[]> results = rS.horasReserva();
-        List<ReservaQ1DTO> dtoList = new ArrayList<>();
-        for (Object[] row : results) {
-            ReservaQ1DTO dto = new ReservaQ1DTO();
-            dto.setId(((Number) row[0]).intValue()); // Assuming ID is the first column
-            dto.setNombre((String) row[1]);            // Assuming name is the second column
-            dto.setHorasReservadas(((Number) row[2]).doubleValue());  // Assuming hours are in the third column
-            dtoList.add(dto);
+    @GetMapping("/cantreserva")
+    public ReservaQ1DTO countReservaInDateRange(
+            @RequestParam @DateTimeFormat(pattern = "YYYY-MM-dd") LocalDate startDate,
+            @RequestParam @DateTimeFormat(pattern = "YYYY-MM-dd") LocalDate endDate){
+        int resCount = rS.CountReservaPerDateRange(startDate, endDate);
+        return new ReservaQ1DTO(resCount);
+    }
+    @GetMapping("/cantrxe")
+    public List<ReservaQ2DTO> cantrxe(){
+        List<String[]> filaLista = rS.cantrxe();
+        List<ReservaQ2DTO> dtoLista = new ArrayList<>();
+
+        for (String[] columna : filaLista){
+            ReservaQ2DTO dto = new ReservaQ2DTO();
+            dto.setNombreEstacionamiento(columna[0]);
+            dto.setNreservas(Integer.parseInt(columna[1]));
+            dtoLista.add(dto);
         }
-        return dtoList;
+        return dtoLista;
     }
 }

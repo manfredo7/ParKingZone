@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.*;
 
 import pe.edu.upc.parkingzone.dtos.MembresiaDTO;
 import pe.edu.upc.parkingzone.dtos.TestacionamientoDTO;
+import pe.edu.upc.parkingzone.dtos.TpagoDTO;
 import pe.edu.upc.parkingzone.entities.Testacionamiento;
 
+import pe.edu.upc.parkingzone.entities.Tpago;
 import pe.edu.upc.parkingzone.serviceinterfaces.ITestacionamientoService;
 
 import java.util.List;
@@ -47,6 +49,13 @@ public class TestacionamientoController {
             ModelMapper m=new ModelMapper();
             return m.map(y, TestacionamientoDTO.class);
         }).collect(Collectors.toList());
+    }
+
+    @PutMapping
+    public void modificar(@RequestBody TestacionamientoDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Testacionamiento u = m.map(dto, Testacionamiento.class);
+        teS.insert(u);
     }
 
 

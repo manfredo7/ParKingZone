@@ -4,7 +4,9 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import pe.edu.upc.parkingzone.dtos.MembresiaDTO;
 import pe.edu.upc.parkingzone.dtos.TpagoDTO;
+import pe.edu.upc.parkingzone.entities.Membresia;
 import pe.edu.upc.parkingzone.entities.Tpago;
 
 import pe.edu.upc.parkingzone.serviceinterfaces.ITpagoService;
@@ -38,4 +40,18 @@ public class TpagoController {
     }
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id) { tpS.delete(id);}
+
+    @GetMapping("/{id}")
+    public TpagoDTO listarId(@PathVariable("id") Integer id){
+        ModelMapper m=new ModelMapper();
+        TpagoDTO dto=m.map(tpS.listId(id),TpagoDTO.class);
+        return dto;
+    }
+
+    @PutMapping
+    public void modificar(@RequestBody TpagoDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Tpago u = m.map(dto, Tpago.class);
+        tpS.insert(u);
+    }
 }

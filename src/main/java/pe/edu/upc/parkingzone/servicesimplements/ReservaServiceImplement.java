@@ -6,6 +6,7 @@ import pe.edu.upc.parkingzone.entities.Reserva;
 import pe.edu.upc.parkingzone.repositories.IReservaRepository;
 import pe.edu.upc.parkingzone.serviceinterfaces.IReservaService;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 @Service
@@ -34,8 +35,13 @@ rR.deleteById(idreserva);
     }
 
     @Override
-    public List<Object[]> horasReserva() {
-        return rR.horasReserva();
+    public int CountReservaPerDateRange(LocalDate startDate, LocalDate endDate) {
+        return rR.CountReservaPerDateRange(startDate,endDate);
+    }
+
+    @Override
+    public List<String[]> cantrxe() {
+        return rR.cantrxe();
     }
 
 

@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import pe.edu.upc.parkingzone.dtos.ComentarioDTO;
 import pe.edu.upc.parkingzone.dtos.MembresiaDTO;
+import pe.edu.upc.parkingzone.entities.Comentarios;
 import pe.edu.upc.parkingzone.entities.Membresia;
 
 import pe.edu.upc.parkingzone.serviceinterfaces.IMembresiaService;
@@ -45,6 +47,13 @@ public class MembresiaController {
         ModelMapper m=new ModelMapper();
         MembresiaDTO dto=m.map(mS.listId(id),MembresiaDTO.class);
         return dto;
+    }
+
+    @PutMapping
+    public void modificar(@RequestBody MembresiaDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Membresia u = m.map(dto, Membresia.class);
+        mS.insert(u);
     }
 
 }
