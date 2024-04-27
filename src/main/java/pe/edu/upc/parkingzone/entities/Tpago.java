@@ -16,9 +16,7 @@ public class Tpago {
     private String descripcionTpago;
 
     //constructor
-    public Tpago(){
-
-    }
+    public Tpago(){ }
 
     public Tpago(int TipoPagoID, String descripcionTpago) {
         System.out.println();

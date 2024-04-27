@@ -10,5 +10,4 @@ public interface ITpagoService {
     public List<Tpago> list();
     public void delete(int id);
     public Tpago listId (int id);
-    public List<Tpago> findByDescripcionTpago (String name);
 }

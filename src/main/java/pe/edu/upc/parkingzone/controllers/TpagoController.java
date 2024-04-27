@@ -3,13 +3,9 @@ package pe.edu.upc.parkingzone.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import pe.edu.upc.parkingzone.dtos.TpagoDTO;
 import pe.edu.upc.parkingzone.entities.Tpago;
-
 import pe.edu.upc.parkingzone.serviceinterfaces.ITpagoService;
-
-import java.io.Console;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -59,4 +55,5 @@ public class TpagoController {
         Tpago tpago = m.map(tpagoDTO, Tpago.class);
         tpS.insert(tpago);
     }
+
 }

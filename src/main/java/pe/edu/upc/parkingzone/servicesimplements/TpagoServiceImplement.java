@@ -7,6 +7,7 @@ import pe.edu.upc.parkingzone.repositories.ITpagoRepository;
 import pe.edu.upc.parkingzone.serviceinterfaces.ITpagoService;
 
 import java.util.List;
+
 @Service
 public class TpagoServiceImplement implements ITpagoService {
     @Autowired
@@ -19,8 +20,5 @@ public class TpagoServiceImplement implements ITpagoService {
     public void delete(int id) {tpR.deleteById(id);}
     @Override
     public Tpago listId(int id) { return tpR.findById(id).orElse( new Tpago());}
-
-    public List<Tpago> findByDescripcionTpago (String name) {
-        return tpR.findByDescripcionTpago(name);
-    }
 }
+

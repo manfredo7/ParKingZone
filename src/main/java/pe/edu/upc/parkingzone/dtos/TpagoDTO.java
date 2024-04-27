@@ -1,5 +1,7 @@
 package pe.edu.upc.parkingzone.dtos;
+
 //Desarrollo Ricardo
+
 public class TpagoDTO {
     private int TipoPagoID;
     private String descripcionTpago;
