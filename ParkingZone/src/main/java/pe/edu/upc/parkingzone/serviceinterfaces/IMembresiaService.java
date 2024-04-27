@@ -10,6 +10,6 @@ public interface IMembresiaService {
     public List<Membresia> list();
     public void delete(int id);
     public Membresia listId(int id);
-    public List<Membresia> findByFechaInicioMembresia(String name);
+
 }
 

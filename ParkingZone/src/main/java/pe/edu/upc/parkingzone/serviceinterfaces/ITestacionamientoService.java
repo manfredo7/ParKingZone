@@ -11,5 +11,5 @@ public interface ITestacionamientoService {
     public void delete(int id);
     public Testacionamiento listId(int id);
     public List<Testacionamiento> findByDescripcionTestacionamiento(String name);
-    public List<Testacionamiento> findByMedidaTestacionamiento(int name);
+
 }

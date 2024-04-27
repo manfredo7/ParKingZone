@@ -2,6 +2,7 @@ package pe.edu.upc.parkingzone.entities;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "Reserva")
@@ -12,9 +13,9 @@ public class Reserva {
     @Column(name="fechaReserva", nullable = false)
     private LocalDate fechaReserva;
     @Column(name="horaInicioReserva", nullable = false)
-    private LocalDate horaInicioReserva;
+    private LocalTime horaInicioReserva;
     @Column(name="horaFinalReserva", nullable = false)
-    private LocalDate horaFinalReserva;
+    private LocalTime horaFinalReserva;
     @Column(name = "estadoReserva", length =50, nullable = false)
     private String estadoReserva;
 
@@ -23,12 +24,13 @@ public class Reserva {
     private Estacionamiento estacionamiento;
     @ManyToOne
     @JoinColumn(name="Usuarioid")
-    private Usuario usuario;
+    private Users usuario;
+
 
     public Reserva() {
     }
 
-    public Reserva(int idReserva, LocalDate fechaReserva, LocalDate horaInicioReserva, LocalDate horaFinalReserva, String estadoReserva, Estacionamiento estacionamiento, Usuario usuario) {
+    public Reserva(int idReserva, LocalDate fechaReserva, LocalTime horaInicioReserva, LocalTime horaFinalReserva, String estadoReserva, Estacionamiento estacionamiento, Users usuario) {
         this.idReserva = idReserva;
         this.fechaReserva = fechaReserva;
         this.horaInicioReserva = horaInicioReserva;
@@ -54,19 +56,19 @@ public class Reserva {
         this.fechaReserva = fechaReserva;
     }
 
-    public LocalDate getHoraInicioReserva() {
+    public LocalTime getHoraInicioReserva() {
         return horaInicioReserva;
     }
 
-    public void setHoraInicioReserva(LocalDate horaInicioReserva) {
+    public void setHoraInicioReserva(LocalTime horaInicioReserva) {
         this.horaInicioReserva = horaInicioReserva;
     }
 
-    public LocalDate getHoraFinalReserva() {
+    public LocalTime getHoraFinalReserva() {
         return horaFinalReserva;
     }
 
-    public void setHoraFinalReserva(LocalDate horaFinalReserva) {
+    public void setHoraFinalReserva(LocalTime horaFinalReserva) {
         this.horaFinalReserva = horaFinalReserva;
     }
 
@@ -86,11 +88,11 @@ public class Reserva {
         this.estacionamiento = estacionamiento;
     }
 
-    public Usuario getUsuario() {
+    public Users getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(Users usuario) {
         this.usuario = usuario;
     }
 }

@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 
 public interface IMembresiaRepository extends JpaRepository<Membresia,Integer> {
-    public List<Membresia> findByFechaInicioMembresia(String name);
+
 }

@@ -1,18 +1,18 @@
 package pe.edu.upc.parkingzone.dtos;
 
-import jakarta.persistence.Column;
 import pe.edu.upc.parkingzone.entities.Estacionamiento;
-import pe.edu.upc.parkingzone.entities.Usuario;
+import pe.edu.upc.parkingzone.entities.Users;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class ReservaDTO {
     private LocalDate fechaReserva;
-    private LocalDate horaInicioReserva;
-    private LocalDate horaFinalReserva;
+    private LocalTime horaInicioReserva;
+    private LocalTime horaFinalReserva;
     private String estadoReserva;
     private Estacionamiento estacionamiento;
-    private Usuario usuario;
+    private Users usuario;
 
     public LocalDate getFechaReserva() {
         return fechaReserva;
@@ -22,19 +22,19 @@ public class ReservaDTO {
         this.fechaReserva = fechaReserva;
     }
 
-    public LocalDate getHoraInicioReserva() {
+    public LocalTime getHoraInicioReserva() {
         return horaInicioReserva;
     }
 
-    public void setHoraInicioReserva(LocalDate horaInicioReserva) {
+    public void setHoraInicioReserva(LocalTime horaInicioReserva) {
         this.horaInicioReserva = horaInicioReserva;
     }
 
-    public LocalDate getHoraFinalReserva() {
+    public LocalTime getHoraFinalReserva() {
         return horaFinalReserva;
     }
 
-    public void setHoraFinalReserva(LocalDate horaFinalReserva) {
+    public void setHoraFinalReserva(LocalTime horaFinalReserva) {
         this.horaFinalReserva = horaFinalReserva;
     }
 
@@ -54,11 +54,11 @@ public class ReservaDTO {
         this.estacionamiento = estacionamiento;
     }
 
-    public Usuario getUsuario() {
+    public Users getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(Users usuario) {
         this.usuario = usuario;
     }
 }

@@ -49,12 +49,5 @@ public class TestacionamientoController {
         }).collect(Collectors.toList());
     }
 
-    //buscar por medida
-    @GetMapping("/buscarDescripcion")
-    public List<TestacionamientoDTO>buscarMedida(@RequestParam int medida){
-        return teS.findByMedidaTestacionamiento(medida).stream().map(y->{
-            ModelMapper m=new ModelMapper();
-            return m.map(y, TestacionamientoDTO.class);
-        }).collect(Collectors.toList());
-    }
+
 }
