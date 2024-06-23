@@ -34,7 +34,7 @@ public interface IUserRepository extends JpaRepository<Users, Long> {
     List<String[]> umaxnreservas();
 
 
-    @Query("select count(u) from Users u where u.Fregistro between :startDate and :endDate")
+    @Query("select count(u) from Users u where u.fregistro between :startDate and :endDate")
     long CountUsersPerDateRange(@Param("startDate") LocalDate startDate, @Param("endDate") LocalDate endDate);
 
 }

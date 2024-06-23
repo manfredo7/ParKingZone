@@ -11,13 +11,14 @@ public class UserDTO {
     private String username;
     private String password;
     private Boolean enabled;
-    private LocalDate Fregistro;
-    private String Nombre;
-    private String ApellidoP;
-    private String ApellidoM;
-    private String Fnacimiento;
-    private String Correo;
+    private LocalDate fregistro;
+    private String nombre;
+    private String apellidoP;
+    private String apellidoM;
+    private String fnacimiento;
+    private String correo;
     private Membresia membresia;
+
 
     public Long getId() {
         return id;
@@ -35,6 +36,14 @@ public class UserDTO {
         this.username = username;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Boolean getEnabled() {
         return enabled;
     }
@@ -44,51 +53,51 @@ public class UserDTO {
     }
 
     public LocalDate getFregistro() {
-        return Fregistro;
+        return fregistro;
     }
 
     public void setFregistro(LocalDate fregistro) {
-        Fregistro = fregistro;
+        this.fregistro = fregistro;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.nombre = nombre;
     }
 
     public String getApellidoP() {
-        return ApellidoP;
+        return apellidoP;
     }
 
     public void setApellidoP(String apellidoP) {
-        ApellidoP = apellidoP;
+        this.apellidoP = apellidoP;
     }
 
     public String getApellidoM() {
-        return ApellidoM;
+        return apellidoM;
     }
 
     public void setApellidoM(String apellidoM) {
-        ApellidoM = apellidoM;
+        this.apellidoM = apellidoM;
     }
 
     public String getFnacimiento() {
-        return Fnacimiento;
+        return fnacimiento;
     }
 
     public void setFnacimiento(String fnacimiento) {
-        Fnacimiento = fnacimiento;
+        this.fnacimiento = fnacimiento;
     }
 
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
 
     public void setCorreo(String correo) {
-        Correo = correo;
+        this.correo = correo;
     }
 
     public Membresia getMembresia() {

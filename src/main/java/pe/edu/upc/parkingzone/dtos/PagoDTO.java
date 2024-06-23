@@ -5,16 +5,15 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import pe.edu.upc.parkingzone.entities.Tpago;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class PagoDTO {
     private int idPago;
     private String documentoPago;
     private int montoPago;
-    private LocalDate fechaPago;
-    private LocalDateTime horaPago;
+    private LocalDateTime fechahoraPago;
     private Tpago tpago;
+
 
     public int getIdPago() {
         return idPago;
@@ -40,20 +39,12 @@ public class PagoDTO {
         this.montoPago = montoPago;
     }
 
-    public LocalDate getFechaPago() {
-        return fechaPago;
+    public LocalDateTime getFechahoraPago() {
+        return fechahoraPago;
     }
 
-    public void setFechaPago(LocalDate fechaPago) {
-        this.fechaPago = fechaPago;
-    }
-
-    public LocalDateTime getHoraPago() {
-        return horaPago;
-    }
-
-    public void setHoraPago(LocalDateTime horaPago) {
-        this.horaPago = horaPago;
+    public void setFechahoraPago(LocalDateTime fechahoraPago) {
+        this.fechahoraPago = fechahoraPago;
     }
 
     public Tpago getTpago() {

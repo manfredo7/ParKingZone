@@ -2,7 +2,7 @@ package pe.edu.upc.parkingzone.serviceinterfaces;
 
 import pe.edu.upc.parkingzone.entities.Pago;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface IPagoService {
@@ -12,5 +12,5 @@ public interface IPagoService {
     public Pago listId (int id);
     public List<Pago> findByIdPago (int pago);
     List<Object[]> getTotalPago();
-    long getTotalRecaudado(LocalDate startDate, LocalDate endDate);
+    long getTotalRecaudado(LocalDateTime startDate, LocalDateTime endDate);
 }

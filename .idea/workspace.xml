@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500a0e2d-abb0-408d-b454-d21475fe8701" name="Changes" comment="Comentarios controller">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/EstacionamientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/EstacionamientoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/MembresiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/MembresiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/PagoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/PagoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/ReservaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/ReservaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/TestacionamientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/TestacionamientoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/TpagoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/TpagoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/dtos/QuerysDTO/ReservaQ1DTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/dtos/QuerysDTO/ReservaQ1DTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IEstacionamientoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IEstacionamientoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IMembresiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IMembresiaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IPagoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IPagoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IReservaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/repositories/IReservaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IEstacionamientoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IEstacionamientoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IPagoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IPagoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/serviceinterfaces/IReservaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/EstacionamientoServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/EstacionamientoServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/PagoServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/PagoServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/parkingzone/servicesimplements/ReservaServiceImplement.java" afterDir="false" />
-    </list>
+    <list default="true" id="500a0e2d-abb0-408d-b454-d21475fe8701" name="Changes" comment="Comentarios controller" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,8 +56,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.ParkingZoneApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ricar/Downloads/Arquitectura de Aplicaciones Web - Presencial/Semana 14/demoAPISX61&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -116,6 +96,16 @@
       <workItem from="1714063904378" duration="6434000" />
       <workItem from="1714150020443" duration="618000" />
       <workItem from="1714191577814" duration="3912000" />
+      <workItem from="1717704977237" duration="556000" />
+      <workItem from="1717713561105" duration="3504000" />
+      <workItem from="1717738092788" duration="84000" />
+      <workItem from="1717793002493" duration="2000" />
+      <workItem from="1718790769649" duration="628000" />
+      <workItem from="1718791469051" duration="18518000" />
+      <workItem from="1719041680347" duration="1415000" />
+      <workItem from="1719065962580" duration="861000" />
+      <workItem from="1719071005453" duration="1990000" />
+      <workItem from="1719114768214" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Reserva">
       <option name="closed" value="true" />
@@ -176,32 +166,32 @@
     <MESSAGE value="Comentarios controller" />
     <option name="LAST_COMMIT_MESSAGE" value="Comentarios controller" />
   </component>
-  <component name="WfRunsListSearchHistory"><![CDATA[{
-  "history": [
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
     {
-      "branch": "Luciano",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;Luciano&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "Luciano",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;Luciano&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "Luciano",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;Luciano&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "Luciano",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;Luciano&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "Luciano",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;Luciano&quot;,
+      &quot;currentBranchFilter&quot;: true
     }
   ],
-  "lastFilter": {
-    "branch": "Luciano",
-    "currentBranchFilter": true
+  &quot;lastFilter&quot;: {
+    &quot;branch&quot;: &quot;Luciano&quot;,
+    &quot;currentBranchFilter&quot;: true
   }
-}]]></component>
+}</component>
 </project>

@@ -14,8 +14,7 @@ public interface IEstacionamientoRepository extends JpaRepository<Estacionamient
             "FROM reserva r " +
             "INNER JOIN estacionamiento e ON r.estacionamientoid = e.id_estacionamiento " +
             "GROUP BY e.id_estacionamiento " +
-            "ORDER BY horas_reservadas DESC " +
-            "LIMIT 1", nativeQuery = true)
+            "ORDER BY horas_reservadas DESC ", nativeQuery = true)
     List<String[]> emaxhorasreserva();
 
     @Query(value = "SELECT e.nombre_estacionamiento AS estacionamiento, " +

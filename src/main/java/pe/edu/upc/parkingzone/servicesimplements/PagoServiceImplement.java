@@ -6,7 +6,7 @@ import pe.edu.upc.parkingzone.entities.Pago;
 import pe.edu.upc.parkingzone.repositories.IPagoRepository;
 import pe.edu.upc.parkingzone.serviceinterfaces.IPagoService;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -27,5 +27,5 @@ public class PagoServiceImplement implements IPagoService {
     @Override
     public List<Object[]> getTotalPago() {return pR.getTotalPago();}
     @Override
-    public long getTotalRecaudado(LocalDate startDate, LocalDate endDate) {return pR.getTotalRecaudado(startDate, endDate);}
+    public long getTotalRecaudado(LocalDateTime startDate, LocalDateTime endDate) {return pR.getTotalRecaudado(startDate, endDate);}
 }

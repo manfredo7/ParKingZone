@@ -2,7 +2,6 @@ package pe.edu.upc.parkingzone.entities;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -15,11 +14,8 @@ public class Pago {
     private String documentoPago;
     @Column(name = "montoPago", nullable = false)
     private int montoPago;
-    @Column(name = "fechaPago", nullable = false)
-    private LocalDate fechaPago;
-    @Column(name = "horaPago", nullable = false)
-    private LocalDateTime horaPago;
-
+    @Column(name = "fechahoraPago", nullable = false)
+    private LocalDateTime fechahoraPago;
     @ManyToOne
     @JoinColumn(name = "Tpagoid")
     private Tpago tpago;
@@ -27,12 +23,11 @@ public class Pago {
     public Pago() {
     }
 
-    public Pago(int idPago, String documentoPago, int montoPago, LocalDate fechaPago, LocalDateTime horaPago, Tpago tpago) {
+    public Pago(int idPago, String documentoPago, int montoPago, LocalDateTime fechahoraPago, Tpago tpago) {
         this.idPago = idPago;
         this.documentoPago = documentoPago;
         this.montoPago = montoPago;
-        this.fechaPago = fechaPago;
-        this.horaPago = horaPago;
+        this.fechahoraPago = fechahoraPago;
         this.tpago = tpago;
     }
 
@@ -60,20 +55,12 @@ public class Pago {
         this.montoPago = montoPago;
     }
 
-    public LocalDate getFechaPago() {
-        return fechaPago;
+    public LocalDateTime getFechahoraPago() {
+        return fechahoraPago;
     }
 
-    public void setFechaPago(LocalDate fechaPago) {
-        this.fechaPago = fechaPago;
-    }
-
-    public LocalDateTime getHoraPago() {
-        return horaPago;
-    }
-
-    public void setHoraPago(LocalDateTime horaPago) {
-        this.horaPago = horaPago;
+    public void setFechahoraPago(LocalDateTime fechahoraPago) {
+        this.fechahoraPago = fechahoraPago;
     }
 
     public Tpago getTpago() {
@@ -84,3 +71,4 @@ public class Pago {
         this.tpago = tpago;
     }
 }
+

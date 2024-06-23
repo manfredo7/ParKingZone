@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/membresia")
+@RequestMapping("/membresias")
 public class MembresiaController {
     @Autowired
     private IMembresiaService mS;

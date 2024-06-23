@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/estacionamiento")
+@RequestMapping("/estacionamientos")
 public class EstacionamientoController {
     @Autowired
     private IEstacionamientoService esS;
@@ -55,7 +55,7 @@ public class EstacionamientoController {
         esS.delete(id);
     }
 
-    @GetMapping("/emaxhorasreserva")
+    @GetMapping("/mhrxe")
     public List<EstacionamientoQ1DTO> emaxhorasreserva(){
         List<String[]> filaLista = esS.emaxhorasreserva();
         List<EstacionamientoQ1DTO> dtoLista = new ArrayList<>();
@@ -69,7 +69,7 @@ public class EstacionamientoController {
         return dtoLista;
     }
 
-    @GetMapping("/montoxe")
+    @GetMapping("/mxe")
     public List<EstacionamientoQ2DTO> montoxe(){
         List<String[]> filaLista = esS.montoxe();
         List<EstacionamientoQ2DTO> dtoLista = new ArrayList<>();

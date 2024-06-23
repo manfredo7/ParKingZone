@@ -9,7 +9,6 @@ public class Tpago {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private int TipoPagoID;
 
     @Column(name = "descripcionTpago", length = 50, nullable = false)
@@ -17,7 +16,6 @@ public class Tpago {
 
     //constructor
     public Tpago(){
-
     }
 
     public Tpago(int TipoPagoID, String descripcionTpago) {

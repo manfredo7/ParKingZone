@@ -1,6 +1,7 @@
 package pe.edu.upc.parkingzone.dtos.QuerysDTO;
 
 public class PagoQ2DTO {
+
     private long PagoPedido;
 
     public PagoQ2DTO(long pagoPedido) {
@@ -14,4 +15,5 @@ public class PagoQ2DTO {
     public void setPagoPedido(long pagoPedido) {
         PagoPedido = pagoPedido;
     }
+
 }

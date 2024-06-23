@@ -1,5 +1,6 @@
 package pe.edu.upc.parkingzone.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -18,28 +19,30 @@ public class Users implements Serializable {
     private String username;
 
     @Column(name = "Fregistro",nullable = false)
-    private LocalDate Fregistro;
+    private LocalDate fregistro;
 
     @Column(name = "Nombre",length = 50,nullable = false)
-    private String Nombre;
+    private String nombre;
 
     @Column(name = "ApellidoP",length = 50,nullable = false)
-    private String ApellidoP;
+    private String apellidoP;
 
     @Column(name = "ApellidoM",length = 50,nullable = false)
-    private String ApellidoM;
+    private String apellidoM;
 
     @Column(name = "Fnacimiento",nullable = false)
-    private String Fnacimiento;
+    private String fnacimiento;
 
     @Column(name = "Correo",length = 50,nullable = false)
-    private String Correo;
+    private String correo;
     @Column(length = 200)
     private String password;
     @JoinColumn(name = "IDmembresia")
     @ManyToOne
     private Membresia membresia;
     private Boolean enabled;
+
+    @JsonIgnore
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private List<Role> roles;
@@ -48,15 +51,16 @@ public class Users implements Serializable {
     public Users() {
     }
 
+
     public Users(Long id, String username, LocalDate fregistro, String nombre, String apellidoP, String apellidoM, String fnacimiento, String correo, String password, Membresia membresia, Boolean enabled, List<Role> roles) {
         this.id = id;
         this.username = username;
-        Fregistro = fregistro;
-        Nombre = nombre;
-        ApellidoP = apellidoP;
-        ApellidoM = apellidoM;
-        Fnacimiento = fnacimiento;
-        Correo = correo;
+        this.fregistro = fregistro;
+        this.nombre = nombre;
+        this.apellidoP = apellidoP;
+        this.apellidoM = apellidoM;
+        this.fnacimiento = fnacimiento;
+        this.correo = correo;
         this.password = password;
         this.membresia = membresia;
         this.enabled = enabled;
@@ -80,51 +84,51 @@ public class Users implements Serializable {
     }
 
     public LocalDate getFregistro() {
-        return Fregistro;
+        return fregistro;
     }
 
     public void setFregistro(LocalDate fregistro) {
-        Fregistro = fregistro;
+        this.fregistro = fregistro;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.nombre = nombre;
     }
 
     public String getApellidoP() {
-        return ApellidoP;
+        return apellidoP;
     }
 
     public void setApellidoP(String apellidoP) {
-        ApellidoP = apellidoP;
+        this.apellidoP = apellidoP;
     }
 
     public String getApellidoM() {
-        return ApellidoM;
+        return apellidoM;
     }
 
     public void setApellidoM(String apellidoM) {
-        ApellidoM = apellidoM;
+        this.apellidoM = apellidoM;
     }
 
     public String getFnacimiento() {
-        return Fnacimiento;
+        return fnacimiento;
     }
 
     public void setFnacimiento(String fnacimiento) {
-        Fnacimiento = fnacimiento;
+        this.fnacimiento = fnacimiento;
     }
 
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
 
     public void setCorreo(String correo) {
-        Correo = correo;
+        this.correo = correo;
     }
 
     public String getPassword() {
